@@ -1,0 +1,23 @@
+# Logger configuration #ERROR, WARN, INFO, DEBUG, TRACE
+logging:
+  file:
+    name: logs/garage.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss,SSS}  (%-5level) %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: INFO
+
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    use-root-path: false
+    config-url: /apidoc
+  packagesToScan: com.kafeinmevlut.garage
+  api-docs:
+    path: /apidoc
+spring:
+  application:
+    name: Garage

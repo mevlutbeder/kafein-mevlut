@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "67e47086-daf1-4b8f-9bb5-fded4533fba2",
+		"name": "Garage Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/garage",
+			"item": [
+				{
+					"name": "status",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/garage/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"garage",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "park",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"color\": \"White\",\n    \"plaque\": \"34-LO-2000\",\n    \"vehicleType\": \"Car\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/garage/park",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"garage",
+								"park"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "leave",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"queueNo\":3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/garage/leave",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"garage",
+								"leave"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
